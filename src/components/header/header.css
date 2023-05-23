@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+.header {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  list-style: none;
+  gap: 5%;
+}
+
+.header > li {
+  text-transform: capitalize;
+  font-family: "Russo One", sans-serif;
+  font-size: 20px;
+  line-height: 1.17;
+  opacity: 0;
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header > .item1 {
+  animation: bounceInDown 1s linear 4.5s;
+  animation-fill-mode: both;
+}
+
+.header > .item2 {
+  animation: bounceInDown 1s linear 5s;
+  animation-fill-mode: both;
+}
+
+.header > .item3 {
+  animation: bounceInDown 1s linear 5.5s;
+  animation-fill-mode: both;
+}
+
+.header > .item4 {
+  animation: bounceInDown 1s linear 6s;
+  animation-fill-mode: both;
+}
+
+.header > .item5 {
+  animation: bounceInDown 1s linear 6.5s;
+  animation-fill-mode: both;
+}
